@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content= 'prevoz, medjunarodni prevoz, bolnica, pacijenti'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content= 'Kvalitetan i brz medicinski prevoz i usluga za sve pacijente. specijalizovani za medjunarodni prevoz pacijenata sa savremenim sanitetskim vozilom, bolnicke posjete, kucne posjete i njega pacijenata. Pozovite nas uvijek na 00387/66-553-335 ' />
+    <title>Sanitetski prevoz | Sanitex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-<your-sha512>" crossorigin="anonymous" />
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-<your-sha512>" crossorigin="anonymous"></script>
+
+    <style>
+       body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #001f3f; /* Dark Blue */
+    color: #fff; /* White */
+    margin-bottom: 50px; /* Add some margin at the bottom to make space for the footer initially */
+    padding-bottom: 60px;
+}
+
+header {
+     padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* You can adjust the height as needed */
+}
+
+#clock-container {
+    display: flex;
+    align-items: flex-start; /* Change this line to align-items: flex-start */
+    font-size: 1.5em;
+}
+
+#clock-icon {
+    margin-right: 10px;
+}
+
+#image-container {
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#image-container img {
+    width: 100%;
+    position: relative;
+}
+
+#image-container p {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: translate(0, -50%);
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+    width: 80%;
+}
+
+section {
+    padding: 20px;
+}
+
+.services-title {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-section {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* rounded corners for the container */
+}
+
+.service-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* match the container's rounded corners */
+}
+
+.service-section p {
+    text-align: center;
+    color: white; /* Black text */
+    margin-top: 10px;
+}
+
+.service-badge {
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    transform: translateX(-50%);
+    background-color: pink;
+    border-radius: 50%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-badge span {
+    color: white;
+    font-size: 1.5em;
+    display: inline-block;
+    line-height: 1;
+}
+
+.service-badge-house {
+    background-color: #001f3f; /* Hot Pink */
+}
+
+.service-badge-wheelchair {
+    background-color: #001f3f; /* Hot Pink */
+}
+
+.service-badge-car {
+    background-color: #001f3f; /* Hot Pink */
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #001f3f; /* Dark Blue */
+    color: #fff; /* White */
+    display: none; /* Initially hidden */
+    height: 60px;
+}
+
+#footer-content {
+    text-align: center;
+}
+
+#footer-content h2 {
+    font-size: 2em; /* Adjust the font size for 'Nas cenovnik' */
+    margin-bottom: 10px; /* Add some margin for spacing */
+}
+
+#footer-content p {
+    font-size: 1em; /* Adjust the font size for other text */
+    margin: 10px 0; /* Add some margin for spacing */
+}
+
+.elementor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px; /* Add margin to create space at the top */
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.elementor-column {
+    box-sizing: border-box;
+    width: calc(48% - 20px); /* Adjusted width with margin */
+    margin: 0; /* Reset margin */
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+        .elementor-column h3,
+        .elementor-column p {
+            margin: 0;
+            text-align: center;
+        }
+        .elementor-column p {
+    list-style: none;
+}
+
+        /* Styling for the top two sections */
+       .elementor-column.light-blue-bg {
+    background-color: #add8e6; /* Light Blue */
+    border: 2px solid #add8e6; /* Light Blue border */
+}
+
+/* Styling for the bottom two sections */
+.elementor-column.gray-bg {
+    background-color: #ccc; /* Gray background */
+    border: 2px solid #ccc; /* Gray border */
+}
+
+.dark-gray-line {
+    height: 2px;
+    background-color: #444; /* Dark Gray line */
+    margin: 10px 0;
+}
+
+/* Dark gray line under text in the left section */
+.elementor-column.gray-bg .dark-gray-line {
+    background-color: #444; /* Dark Gray line */
+    margin: 10px 0;
+}
+
+
+    </style>
+</head>
+<body>
+
+  <header>
+    <div id="clock-container">
+        <div id="clock-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="30" height="30">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2V7h2v9z"/>
+            </svg>
+        </div>
+        <div>Pon-Ned: 00 - 24  pozovite nas bilo kad 00387/66-553-335 </div>
+    </div>
+</header>
+
+    <div id="image-container">
+        <video id="myVideo" width="100%" height="auto" controls>
+            <source src="snimak.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p id="videoText">Obezbeđujemo medicinski stručan, konforan, kvalitetan i udoban prevoz pacijenta savremenim sanitetskim vozilima marke Mercedes - po pristupačnim cenama. Tokom 30 godina naše medicinske ekipe su obavile preko 2500 međunarodnih transporata pacijenata.</p>
+    </div>
+
+    <section>
+        <div class="services-title">Usluge</div>
+
+        <div class="service-section">
+            <img src="nepokretna.jpg" alt="Transport nepokretnih pacijenata" loading="lazy">
+            <div class="service-badge service-badge-wheelchair"><span><i class="fas fa-wheelchair"></i></span></div>
+            <p>Transport nepokretnih pacijenata - Naše višedecenijsko iskustvo u transportu pacijenata pomaže nam da prevoz nepokretnih pacijenata iz „kreveta u krevet” prođe brzo, efikasno i sigurno.</p>
+        </div>
+
+        <div class="service-section">
+            <img src="vozilo.jpg" alt="Medjunarodni transport pacijenata" loading="lazy">
+            <div class="service-badge service-badge-car"><span><i class="fas fa-ambulance"></i></span></div>
+            <p>Medjunarodni transport pacijenata - Ekipe opremljene svom neophodnom opremom za transport i najtežih bolesnika, sanitetskim vozilima marke Mercedes Sprinter, u svakom mometu su spremne da krenu na bilo koju destinaciju na kojoj se pacijent nalazi.</p>
+        </div>
+
+        <div class="service-section">
+            <img src="kucneposjete.jpg" alt="Kucne posjete" loading="lazy">
+            <div class="service-badge service-badge-house"><span><i class="fas fa-home"></i></span></div>
+            <p>Kućne posjete - Ukoliko ste sprečeni da nas posetite – mi dolazimo u vaš dom!</p>
+        </div>
+
+         <div id="footer-content">
+            <h2>Nas cenovnik</h2>
+            <p>Rezervaciju prevoza možete da izvršite putem telefona u bilo koje doba dana.</p>
+        </div>
+
+<div class="elementor-container">
+        <!-- Top Left Section -->
+        <div class="elementor-column light-blue-bg" data-id="column1">
+            <h3>Prevoz na teritoriji BiH</h3>
+            <p>Osiguravamo brz, efikasan i udoban prevoz unutar Bosne i Hercegovine.</p>
+        </div>
+
+        <!-- Top Right Section -->
+        <div class="elementor-column light-blue-bg" data-id="column2">
+            <h3>Medjunarodni prevoz</h3>
+            <p>Nudimo internacionalni prevoz sa našim specijalizovanim vozilima i stručnim osobljem.</p>
+        </div>
+
+        <!-- Bottom Left Section -->
+        <div class="elementor-column gray-bg" data-id="column3">
+            <h3>KM 4 BAM</h3>
+            <div class="dark-gray-line"></div>
+            <p>Obracun prema kilometrazi.</p>
+        </div>
+
+        <!-- Bottom Right Section -->
+        <div class="elementor-column gray-bg" data-id="column4">
+            <h3>KM 1.5 Euro</h3>
+            <p>Obracun prema kilometrazi.</p>
+            <div class="dark-gray-line"></div>
+            <p>Dva vozaca</p>
+            <div class="dark-gray-line"></div>
+            <p>Prevoz do 2 osobe u pratnji</p>
+        </div>
+    </div>
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+
+        const video = document.getElementById('myVideo');
+        const videoText = document.getElementById('videoText');
+
+        video.addEventListener('play', () => {
+            videoText.style.display = 'none';
+        });
+
+        video.addEventListener('ended', () => {
+            videoText.style.display = 'block';
+        });
+
+
+        // JavaScript to show the footer when scrolling to the bottom
+        window.addEventListener('scroll', function() {
+            var scrollHeight = document.documentElement.scrollHeight;
+            var clientHeight = window.innerHeight;
+            var scrollTop = window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement.scrollTop || 0);
+
+            // Adjust the 50 value based on your preference for when the footer should appear
+            if (scrollHeight - clientHeight - scrollTop < 50) {
+                document.querySelector('footer').style.display = 'block';
+            } else {
+                document.querySelector('footer').style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
