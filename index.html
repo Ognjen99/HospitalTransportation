@@ -1,325 +1,472 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content= 'prevoz, medjunarodni prevoz, transport, usluge, bolnica, pacijenti'/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content= 'Kvalitetan i brz medicinski prevoz i usluga za sve pacijente. specijalizovani za medjunarodni prevoz pacijenata sa savremenim sanitetskim vozilom, bolnicke posjete, kucne posjete i njega pacijenata. Pozovite nas uvijek na 00387/66-553-335 ' />
-    <title>Sanitetski prevoz || Sanitex</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-<your-sha512>" crossorigin="anonymous" />
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-<your-sha512>" crossorigin="anonymous"></script>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+              <meta charset="UTF-8">
+            <meta name="keywords" content="prevoz, medjunarodni prevoz, transport, usluge, bolesnik, pacijenti, sanitetski prevoz, kućna njega, medicinksa pratnja"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Kvalitetan i brz medicinski prevoz i usluga za sve pacijente. Specijalizovani za međunarodni prevoz pacijenata sa savremenim sanitetskim vozilom, sa ili bez medicinske pratnje(medicinska sestra i ljekar) kućne posjete i njega pacijenata. Pozovite nas na 00387/65-310-385  00387/66-713-000 00381/64-275-4504"/>
+            <title>Sanitetski prevoz || Kućna Njega</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-<your-sha512>" crossorigin="anonymous" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha512-<your-sha512>" crossorigin="anonymous" />
 
-    <style>
-       body, html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #001f3f; /* Dark Blue */
-    color: #fff; /* White */
-    margin-bottom: 50px; /* Add some margin at the bottom to make space for the footer initially */
-    padding-bottom: 60px;
+            <style>
+               body, html {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #001f3f; /* Dark Blue */
+            color: #fff; /* White */
+            margin-bottom: 50px; /* Add some margin at the bottom to make space for the footer initially */
+            padding-bottom: 60px;
+        }
+
+     header {
+    padding: 10px !important;
+    text-align: center !important; /* Center the text */
+    height: 50px !important;
 }
 
-header {
-     padding: 10px;
+.header-text {
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px; /* You can adjust the height as needed */
+    color: white;
+    padding: 10px;
+    margin-top: 10px; /* Adjust the margin-top value as needed */
+    position: relative; /* Add this line */
+    top: -85px; /* Adjust the top value as needed */
 }
+
 
 #clock-container {
-    display: flex;
-    align-items: flex-start; /* Change this line to align-items: flex-start */
-    font-size: 1.5em;
+    display: flex !important;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-size: 1.5em !important;
 }
 
 #clock-icon {
     margin-right: 10px;
+    margin-top: -150px;
 }
 
-#image-container {
-    max-width: 80%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-}
-
-#image-container img {
-    width: 100%;
-    position: relative;
-}
-
-#image-container p {
-    position: absolute;
-    top: 70%;
-    left: 10%;
-    transform: translate(0, -50%);
-    color: white;
-    font-size: 1.5em;
-    text-align: left;
-    width: 80%;
-}
-
-section {
-    padding: 20px;
-}
-
-.services-title {
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.service-section {
-    width: 30%;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 2%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px; /* rounded corners for the container */
-}
-
-.service-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px; /* match the container's rounded corners */
-}
-
-.service-section p {
-    text-align: center;
-    color: white; /* Black text */
-    margin-top: 10px;
-}
-
-.service-badge {
-    position: absolute;
-    top: 1%;
-    left: 10%;
-    transform: translateX(-50%);
-    background-color: pink;
-    border-radius: 50%;
-    padding: 15px;
+.header-images {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.service-badge span {
-    color: white;
-    font-size: 1.5em;
-    display: inline-block;
-    line-height: 1;
-}
-
-.service-badge-house {
-    background-color: #001f3f; /* Hot Pink */
-}
-
-.service-badge-wheelchair {
-    background-color: #001f3f; /* Hot Pink */
-}
-
-.service-badge-car {
-    background-color: #001f3f; /* Hot Pink */
-}
-
-footer {
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #001f3f; /* Dark Blue */
-    color: #fff; /* White */
-    display: none; /* Initially hidden */
-    height: 60px;
-}
-
-#footer-content {
-    text-align: center;
-}
-
-#footer-content h2 {
-    font-size: 2em; /* Adjust the font size for 'Nas cenovnik' */
-    margin-bottom: 10px; /* Add some margin for spacing */
-}
-
-#footer-content p {
-    font-size: 1em; /* Adjust the font size for other text */
-    margin: 10px 0; /* Add some margin for spacing */
-}
-
-.elementor-container {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 20px; /* Add margin to create space at the top */
-    margin-left: 0;
-    margin-right: 0;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
 }
 
-.elementor-column {
-    box-sizing: border-box;
-    width: calc(48% - 20px); /* Adjusted width with margin */
-    margin: 0; /* Reset margin */
-    padding: 20px;
-    font-size: 1.2em;
+.left-image,
+.right-image {
+    max-width: 50px; /* Adjust the width as needed */
+    height: auto;
+    display: block; /* Ensure the images are treated as block elements */
+    margin:5px;
 }
 
-        .elementor-column h3,
-        .elementor-column p {
-            margin: 0;
+        section {
+            padding: 20px;
+        }
+
+        .services-title {
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .service-section {
+            width: 30%;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 2%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px; /* rounded corners for the container */
+        }
+
+        .service-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px; /* match the container's rounded corners */
+        }
+
+        .service-section p {
+            text-align: center;
+            color: white; /* Black text */
+            margin-top: 10px;
+        }
+
+        .service-badge {
+            position: absolute;
+            top: 1%;
+            left: 10%;
+            transform: translateX(-50%);
+            background-color: pink;
+            border-radius: 50%;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-badge span {
+            color: white;
+            font-size: 1.5em;
+            display: inline-block;
+            line-height: 1;
+        }
+
+        .service-badge-house {
+            background-color: #001f3f; /* Hot Pink */
+        }
+
+        .service-badge-wheelchair {
+            background-color: #001f3f; /* Hot Pink */
+        }
+
+        .service-badge-car {
+            background-color: #001f3f; /* Hot Pink */
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #001f3f; /* Dark Blue */
+            color: #fff; /* White */
+            display: none; /* Initially hidden */
+            height: 60px;
+        }
+
+        #footer-content {
             text-align: center;
         }
-        .elementor-column p {
-    list-style: none;
+
+        #footer-content h2 {
+            font-size: 2em; /* Adjust the font size for 'Nas cenovnik' */
+            margin-bottom: 10px; /* Add some margin for spacing */
+        }
+
+        #footer-content p {
+            font-size: 1em; /* Adjust the font size for other text */
+            margin: 10px 0; /* Add some margin for spacing */
+        }
+
+        .elementor-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px; /* Add margin to create space at the top */
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .elementor-column {
+            box-sizing: border-box;
+            width: calc(48% - 20px); /* Adjusted width with margin */
+            margin: 0; /* Reset margin */
+            padding: 20px;
+            font-size: 1.2em;
+        }
+
+                .elementor-column h3,
+                .elementor-column p {
+                    margin: 0;
+                    text-align: center;
+                }
+                .elementor-column p {
+            list-style: none;
+        }
+          #image-container {
+            max-width: 80%;
+            margin: 0 auto;
+            display: flex;
+            position: relative;
+            justify-content: center; /* Center the content horizontally */
+        }
+
+                  .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-content: center; /* Center the content horizontally */
+        }
+
+                .gallery img {
+                    width: 100%;
+                    border-radius: 15px;
+                    cursor: pointer;
+                    transition: transform 0.3s ease-in-out;
+                }
+
+                .gallery img:hover {
+                    transform: scale(1.1);
+                }
+              .slider-container {
+            position: relative;
+            max-width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+               .slider {
+            display: flex;
+            width: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+                .slide {
+            /* Set min-width to 100% to ensure each slide takes up the full width of the container */
+            min-width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+                .slide img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+        object-fit: contain;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+    }
+
+.arrow-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            z-index: 2;
+        }
+
+        .arrow {
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            z-index: 3;
+            pointer-events: auto;
+        }
+
+        .arrow.left {
+            left: 20px;
+        }
+
+        .arrow.right {
+            right: 20px;
+        }
+
+    .thumbnail-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align thumbnails to the bottom */
+    margin-top: 10px;
+    position: absolute;
+    bottom: 20px; /* Adjusted bottom value */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
 }
 
-        /* Styling for the top two sections */
-       .elementor-column.light-blue-bg {
-    background-color: #add8e6; /* Light Blue */
-    border: 2px solid #add8e6; /* Light Blue border */
+.thumbnail {
+    width: 45px; /* Adjusted width */
+    height: 45px; /* Adjusted height */
+    overflow: hidden;
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-right: 5px;
+    border-radius: 10px;
+    z-index: 3;
 }
 
-/* Styling for the bottom two sections */
-.elementor-column.gray-bg {
-    background-color: #ccc; /* Gray background */
-    border: 2px solid #ccc; /* Gray border */
+.thumbnail:not(:last-child) {
+    margin-right: 3px;
 }
 
-.dark-gray-line {
-    height: 2px;
-    background-color: #444; /* Dark Gray line */
-    margin: 10px 0;
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-/* Dark gray line under text in the left section */
-.elementor-column.gray-bg .dark-gray-line {
-    background-color: #444; /* Dark Gray line */
-    margin: 10px 0;
+.gallery img,
+.slide img {
+    width: 100%;
+    height: 730px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
+    .thumbnail.active {
+        filter: brightness(130%);
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    }
 
-    </style>
-</head>
-<body>
+            </style>
+        </head>
+        <body>
 
-  <header>
-    <div id="clock-container">
-        <div id="clock-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="30" height="30">
-                <path d="M0 0h24v24H0z" fill="none"/>
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2V7h2v9z"/>
-            </svg>
-        </div>
-        <div>Pon-Ned: 00 - 24  pozovite nas bilo kad 00387/65-310-385 </div>
+          <header>
+         <div class="header-images">
+        <img src="logo.jpg" class="left-image" alt="Left Image">
+        <img src="logo.jpg" class="right-image" alt="Right Image">
     </div>
-</header>
+            <div id="clock-container">
+                <div id="clock-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="30" height="30">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2V7h2v9z"/>
+                    </svg>
+                </div>
+                <div class="header-text">Pon-Ned: 00 - 24  pozovite nas bilo kad 00387/65-310-385 </div>
+            </div>
+        </header>
 
-    <div id="image-container">
-        <video id="myVideo" width="100%" height="auto" controls>
-            <source src="snimak.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p id="videoText">Obezbeđujemo medicinski stručan, konforan, kvalitetan i udoban prevoz pacijenta savremenim sanitetskim vozilima marke Mercedes - po pristupačnim cijenama. Tokom 30 godina naše medicinske ekipe su obavile preko 2500 međunarodnih transporata pacijenata.</p>
-    </div>
-
-    <section>
-        <div class="services-title">Usluge</div>
-
-        <div class="service-section">
-            <img src="nepokretna.jpg" alt="Transport nepokretnih pacijenata" loading="lazy">
-            <div class="service-badge service-badge-wheelchair"><span><i class="fas fa-wheelchair"></i></span></div>
-            <p>Transport nepokretnih pacijenata - Naše višedecenijsko iskustvo u transportu pacijenata pomaže nam da prevoz nepokretnih pacijenata iz „kreveta u krevet” prođe brzo, efikasno i sigurno.</p>
+          
+            <section>
+         <div class="slider-container">
+                    <div class="slider">
+                       <div class="thumbnail active">
+            <img src="vozilo.jpg" alt="Thumbnail 1" loading="lazy">
         </div>
+                        <div class="slide">
+                            <img src="img1.jpg" alt="Gallery Image 2" loading="lazy">
+                        </div>
+                        <div class="slide">
+                            <img src="img2.jpg" alt="Gallery Image 3" loading="lazy">
+                        </div>
+                         <div class="slide">
+                            <img src="img3.jpg" alt="Gallery Image 1" loading="lazy">
+                        </div>
+                         <div class="slide">
+                            <img src="img4.jpg" alt="Gallery Image 1" loading="lazy">
+                        </div>
+                         <div class="slide">
+                            <img src="img5.jpg" alt="Gallery Image 1" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="thumbnail-container" id="thumbnail-container"></div>
+                </div>
+                </div>
 
-        <div class="service-section">
-            <img src="vozilo.jpg" alt="Medjunarodni transport pacijenata" loading="lazy">
-            <div class="service-badge service-badge-car"><span><i class="fas fa-ambulance"></i></span></div>
-            <p>Medjunarodni transport pacijenata - Ekipe opremljene svom neophodnom opremom za transport i najtežih bolesnika, sanitetskim vozilima marke Mercedes Sprinter, u svakom mometu su spremne da krenu na bilo koju destinaciju na kojoj se pacijent nalazi.</p>
-        </div>
+                <div class="services-title">Usluge</div>
 
-        <div class="service-section">
-            <img src="kucneposjete.jpg" alt="Kucne posjete" loading="lazy">
-            <div class="service-badge service-badge-house"><span><i class="fas fa-home"></i></span></div>
-            <p>Kućne posjete - Ukoliko ste sprečeni da nas posjetite – mi dolazimo u vaš dom!</p>
-        </div>
+                <div class="service-section">
+                    <img src="nepokretna.jpg" alt="Transport nepokretnih pacijenata" loading="lazy">
+                    <div class="service-badge service-badge-wheelchair"><span><i class="fas fa-wheelchair"></i></span></div>
+                    <p>Transport teško pokretnih i nepokretnih pacijenata - Naše dugogodišnje iskustvo u transportu pacijenata pomaže nam da prevoz nepokretnih pacijenata od „kreveta do kreveta” prođe brzo, efikasno i sigurno.</p>
+                </div>
 
-         <div id="footer-content">
-            <h2>Nas cenovnik</h2>
-            <p>Rezervaciju prevoza možete da izvršite putem telefona u bilo koje doba dana.</p>
-        </div>
+                <div class="service-section">
+                    <img src="vozilo.jpg" alt="Medjunarodni transport pacijenata" loading="lazy">
+                    <div class="service-badge service-badge-car"><span><i class="fas fa-ambulance"></i></span></div>
+                    <p>Medjunarodni transport pacijenata - Ekipe opremljene svom neophodnom opremom za transport i najtežih bolesnika, spremne da krenu na bilo koju destinaciju na kojoj se pacijent nalazi.</p>
+                </div>
 
-<div class="elementor-container">
-        <!-- Top Left Section -->
-        <div class="elementor-column light-blue-bg" data-id="column1">
-            <h3>Prevoz na teritoriji BiH</h3>
-            <p>Osiguravamo brz, efikasan i udoban prevoz unutar Bosne i Hercegovine.</p>
-        </div>
+                <div class="service-section">
+                    <img src="kucneposjete.jpg" alt="Kucne posjete" loading="lazy">
+                    <div class="service-badge service-badge-house"><span><i class="fas fa-home"></i></span></div>
+                    <p>Kućna njega - Udruženje gradjana za pomoć starim i nemoćnim osobama formirano 2017 godine. U svom timu okuplja iskusne medicinske radnike svih profila(vozače, negovatelje, medicinske sestre, fizioterapeute, ljekare i ljekare specijaliste). Zavisno od potreba i stanja pacijenta ekipa izlazi u kućnu posjetu sa ili bez ljekara. Propisanu terapiju(davanje injekcija, ukljućivanje infuzija, previjanje pacijenata, zamjena urinarnih katetera, zamjena stoma itd.), sprovodimo u domu pacijenta uz nadzor i dogovor sa nadležnim ljekarom.</p>
+                </div>
+            </section>
 
-        <!-- Top Right Section -->
-        <div class="elementor-column light-blue-bg" data-id="column2">
-            <h3>Međunarodni prevoz</h3>
-            <p>Nudimo internacionalni prevoz sa našim specijalizovanim vozilima i stručnim osobljem.</p>
-        </div>
+            
 
-        <!-- Bottom Left Section -->
-        <div class="elementor-column gray-bg" data-id="column3">
-            <h3>KM 4 BAM</h3>
-            <div class="dark-gray-line"></div>
-            <p>Obračun prema kilometraži.</p>
-        </div>
+            <footer>
+                <p>Email:kucnanjegazvornik@gmail.com</p>
+            </footer>
 
-        <!-- Bottom Right Section -->
-        <div class="elementor-column gray-bg" data-id="column4">
-            <h3>KM 1.5 Euro</h3>
-            <div class="dark-gray-line"></div>
-            <p>Obračun prema kilometraži.</p>
-            <p>Dva vozača</p>
-            <p>Prevoz do 2 osobe u pratnji</p>
-        </div>
-    </div>
-    </section>
+            <script>
+        initializeThumbnails();
 
-    
+        let currentSlide = 0;
 
-    <footer>
-        <p>&copy; 2023 Your Website. All rights reserved.</p>
-    </footer>
+        function initializeThumbnails() {
+          const thumbnailContainer = document.getElementById('thumbnail-container');
+          const slides = document.querySelectorAll('.slide img');
 
-    <script>
+          slides.forEach((slide, index) => {
+            const thumbnail = document.createElement('div');
+            thumbnail.className = 'thumbnail';
+            thumbnail.dataset.slideIndex = index; // Add the data-slideIndex attribute
+            thumbnail.innerHTML = `<img src="${slide.src}" alt="Thumbnail ${index + 1}" loading="lazy">`;
+            thumbnail.addEventListener('click', () => showSlide(index));
+            thumbnailContainer.appendChild(thumbnail);
 
-        const video = document.getElementById('myVideo');
-        const videoText = document.getElementById('videoText');
-
-        video.addEventListener('play', () => {
-            videoText.style.display = 'none';
-        });
-
-        video.addEventListener('ended', () => {
-            videoText.style.display = 'block';
-        });
-
-
-        // JavaScript to show the footer when scrolling to the bottom
-        window.addEventListener('scroll', function() {
-            var scrollHeight = document.documentElement.scrollHeight;
-            var clientHeight = window.innerHeight;
-            var scrollTop = window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement.scrollTop || 0);
-
-            // Adjust the 50 value based on your preference for when the footer should appear
-            if (scrollHeight - clientHeight - scrollTop < 50) {
-                document.querySelector('footer').style.display = 'block';
-            } else {
-                document.querySelector('footer').style.display = 'none';
+            if (index === 0) {
+              thumbnail.classList.add('active');
             }
+          });
+        }
+
+        function showSlide(index) {
+          const slider = document.querySelector('.slider');
+          const slides = document.querySelectorAll('.slide');
+          const thumbnails = document.querySelectorAll('.thumbnail');
+
+          slides.forEach((slide, i) => {
+            if (i === index) {
+              slide.style.opacity = '1';
+            } else {
+              slide.style.opacity = '0';
+            }
+          });
+
+          const slideWidth = slides[0].offsetWidth;
+          slider.style.transform = `translateX(${-index * slideWidth}px)`;
+
+          // Toggle the 'active' class for all thumbnails
+          thumbnails.forEach((thumbnail) => {
+            const slideIndex = parseInt(thumbnail.dataset.slideIndex, 10);
+            thumbnail.classList.toggle('active', slideIndex === index);
+          });
+        }
+
+         window.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') {
+            currentSlide = (currentSlide - 1 + document.querySelectorAll('.slide').length) % document.querySelectorAll('.slide').length;
+            showSlide(currentSlide);
+        } else if (e.key === 'ArrowRight') {
+            currentSlide = (currentSlide + 1) % document.querySelectorAll('.slide').length;
+            showSlide(currentSlide);
+        }
+    });
+        // JavaScript to show the footer when scrolling to the bottom
+        window.addEventListener('scroll', function () {
+          var scrollHeight = document.documentElement.scrollHeight;
+          var clientHeight = window.innerHeight;
+          var scrollTop = window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement.scrollTop || 0);
+
+          // Adjust the 50 value based on your preference for when the footer should appear
+          if (scrollHeight - clientHeight - scrollTop < 50) {
+            document.querySelector('footer').style.display = 'block';
+          } else {
+            document.querySelector('footer').style.display = 'none';
+          }
         });
     </script>
 
-</body>
-</html>
+        </body>
+        </html>
+
