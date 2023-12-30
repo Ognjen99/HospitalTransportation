@@ -4,77 +4,122 @@
               <meta charset="UTF-8">
             <meta name="keywords" content="prevoz, medjunarodni prevoz, transport, usluge, bolesnik, pacijenti, sanitetski prevoz, kućna njega, medicinksa pratnja"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyIdMxMl4Px72nXPoLlCg1xCKecXJZOm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-<your-sha512>" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha512-<your-sha512>" crossorigin="anonymous" />
             <meta name="description" content="Kvalitetan i brz medicinski prevoz i usluga za sve pacijente. Specijalizovani za međunarodni prevoz pacijenata sa savremenim sanitetskim vozilom, sa ili bez medicinske pratnje(medicinska sestra i ljekar) kućne posjete i njega pacijenata. Pozovite nas na 00387/65-310-385  00387/66-713-000 00381/64-275-4504"/>
             <title>Sanitetski prevoz || Kućna Njega</title>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-<your-sha512>" crossorigin="anonymous" />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha512-<your-sha512>" crossorigin="anonymous" />
 
             <style>
-               body, html {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #001f3f; /* Dark Blue */
-            color: #fff; /* White */
-            margin-bottom: 50px; /* Add some margin at the bottom to make space for the footer initially */
-            padding-bottom: 60px;
+              body, html {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #001f3f; /* Dark Blue */
+        color: #fff; /* White */
+        margin-bottom: 50px; /* Add some margin at the bottom to make space for the footer initially */
+        padding-bottom: 60px;
+    }
+       @media screen and (min-width: 768px) {
+        .header-text {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+    }
+
+    /* Smaller screens */
+    @media screen and (max-width: 767px) {
+        .header-text {
+            font-size: 1em;
+            margin-top: 10px;
         }
 
-     header {
-    padding: 10px !important;
-    text-align: center !important; /* Center the text */
-    height: 50px !important;
-}
-
-.header-text {
-    text-align: center;
-    color: white;
-    padding: 10px;
-    margin-top: 10px; /* Adjust the margin-top value as needed */
-    position: relative; /* Add this line */
-    top: -85px; /* Adjust the top value as needed */
-}
-
-
-#clock-container {
-    display: flex !important;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    font-size: 1.5em !important;
-}
-
-#clock-icon {
-    margin-right: 10px;
-    margin-top: -150px;
-}
-
-.header-images {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
-}
-
-.left-image,
-.right-image {
-    max-width: 50px; /* Adjust the width as needed */
-    height: auto;
-    display: block; /* Ensure the images are treated as block elements */
-    margin:5px;
-}
-
-        section {
-            padding: 20px;
+        #clock-container {
+            display: none;
         }
+    }
+    @media screen and (max-width: 1100px) {
+    .header-text {
+        font-size: 1em;
+        margin-top: 10px;
+    }
 
-        .services-title {
-            font-size: 3em;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 20px;
-        }
+    #clock-icon {
+        display: none !important; /* Hide clock icon on smaller screens */
+    }
+
+    #clock-container {
+        display: flex !important;
+    }
+
+    #clock-icon-small {
+        display: flex; /* Display smaller clock icon on smaller screens */
+        align-items: center; /* Align vertically */
+        margin-right: 5px; /* Adjust margin for spacing */
+    }
+
+    #clock-icon-small svg {
+        width: 20px; /* Adjust the width of the clock icon for smaller screens */
+        height: 20px; /* Adjust the height of the clock icon for smaller screens */
+        fill: white; /* Ensure the icon remains white */
+    }
+}
+    section {
+        padding: 20px;
+    }
+
+    header {
+        background-color: #001f3f; /* Adjust the background color as needed */
+        padding: 10px;
+        text-align: center;
+    }
+
+   #clock-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+
+    #clock-icon {
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    .header-text {
+        text-align: center;
+        color: white;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+ .header-images {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left-image,
+    .right-image {
+        max-width: 50px;
+        height: auto;
+        margin: 5px;
+    }
+
+         section {
+        padding: 20px;
+    }
+
+    .services-title {
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
         .service-section {
             width: 30%;
@@ -327,21 +372,21 @@
         </head>
         <body>
 
-          <header>
-         <div class="header-images">
+         <header class="container">
+    <div class="header-images d-flex justify-content-between">
         <img src="logo.jpg" class="left-image" alt="Left Image">
         <img src="logo.jpg" class="right-image" alt="Right Image">
     </div>
-            <div id="clock-container">
-                <div id="clock-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="30" height="30">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2V7h2v9z"/>
-                    </svg>
-                </div>
-                <div class="header-text">Pon-Ned: 00 - 24  pozovite nas bilo kad 00387/65-310-385 </div>
-            </div>
-        </header>
+    <div id="clock-container" class="text-center">
+        <div id="clock-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="30" height="30">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2V7h2v9z"/>
+            </svg>
+        </div>
+        <div class="header-text">Pon-Ned: 00 - 24  pozovite nas bilo kad 00387/65-310-385 || 00387/66-713-000 </div>
+    </div>
+</header>
 
           
             <section>
@@ -465,7 +510,11 @@
             document.querySelector('footer').style.display = 'none';
           }
         });
+
     </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-dL4hvvcDJj3EMEKV8mp1B/TQ8/gLBpUVCyoH8k4tJ1rbU4tV5UGQfw2JDjd+BeZ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyIdMxMl4Px72nXPoLlCg1xCKecXJZOm" crossorigin="anonymous"></script>
 
         </body>
         </html>
